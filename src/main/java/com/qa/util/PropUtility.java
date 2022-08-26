@@ -10,10 +10,11 @@ public class PropUtility {
 	 * @author Kale Jana
 	 */
 	public static Properties prop = new Properties();
-	public static FileInputStream fis=null;
+	public static FileInputStream fis = null;
+
 	public static String getValue(String filePath, String key) {
-		try {			
-			 fis = new FileInputStream(filePath);
+		try {
+			fis = new FileInputStream(filePath);
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -22,9 +23,14 @@ public class PropUtility {
 		}
 		return prop.getProperty(key);
 	}
-	
+
 	public static String getEnvDetails(String key) {
 		return getValue("./src/main/resources/com/qa/config/config.properties", key);
 	}
-	
+
+	public String getLocator(String key) {
+
+		String basedir = System.getProperty("user.dir");
+		return getValue(basedir + "./src/main/resources/com/qa/config/OR.properties", key);
+	}
 }

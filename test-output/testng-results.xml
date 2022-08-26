@@ -2,12 +2,21 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-08-25T20:39:05 IST" name="Default suite" finished-at="2022-08-25T20:39:35 IST" duration-ms="30251">
     <groups>
     </groups>
     <test started-at="2022-08-25T20:39:05 IST" name="Default test" finished-at="2022-08-25T20:39:35 IST" duration-ms="30251">
       <class name="com.qa.pagetests.RegistrationPageTest">
         <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.pagetests.RegistrationPageTest@3646a422]" started-at="2022-08-25T20:39:05 IST" name="setUp" finished-at="2022-08-25T20:39:30 IST" duration-ms="24420" status="PASS">
+=======
+  <suite started-at="2022-08-24T15:03:46 IST" name="Default suite" finished-at="2022-08-24T15:04:00 IST" duration-ms="14200">
+    <groups>
+    </groups>
+    <test started-at="2022-08-24T15:03:46 IST" name="Default test" finished-at="2022-08-24T15:04:00 IST" duration-ms="14200">
+      <class name="com.qa.pagetests.HomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.pagetests.HomePageTest@4816278d]" started-at="2022-08-24T15:03:46 IST" name="setUp" finished-at="2022-08-24T15:03:58 IST" duration-ms="12180" status="PASS">
+>>>>>>> 9e5dcdc91c2c318f0b1ae92a6233a5b3290d7975
           <params>
             <param index="0">
               <value>
@@ -18,11 +27,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< HEAD
         <test-method signature="userRegistration()[pri:1, instance:com.qa.pagetests.RegistrationPageTest@3646a422]" started-at="2022-08-25T20:39:30 IST" name="userRegistration" finished-at="2022-08-25T20:39:34 IST" duration-ms="4087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistration -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.pagetests.RegistrationPageTest@3646a422]" started-at="2022-08-25T20:39:34 IST" name="tearDown" finished-at="2022-08-25T20:39:35 IST" duration-ms="1455" status="PASS">
+=======
+        <test-method signature="clickonRegister()[pri:2, instance:com.qa.pagetests.HomePageTest@4816278d]" started-at="2022-08-24T15:03:59 IST" name="clickonRegister" finished-at="2022-08-24T15:04:00 IST" duration-ms="1313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonRegister -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.pagetests.HomePageTest@4816278d]" started-at="2022-08-24T15:04:00 IST" name="tearDown" finished-at="2022-08-24T15:04:00 IST" duration-ms="441" status="PASS">
+>>>>>>> 9e5dcdc91c2c318f0b1ae92a6233a5b3290d7975
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

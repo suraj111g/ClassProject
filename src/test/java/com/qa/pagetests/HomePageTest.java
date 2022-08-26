@@ -32,8 +32,16 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 2)
 	public void clickonRegister() {
 		HomePage Homepage = new HomePage();
-		RegistrationPage reg=Homepage.clickOnRegister();
-		boolean result=reg.registrationPageTitleIsDisplayed();
+		RegistrationPage reg = Homepage.clickOnRegister();
+		boolean result = reg.registrationPageTitleIsDisplayed();
+		Assert.assertTrue(result);
+	}
+
+	@Test(priority = 3)
+	public void clickonGender() {
+		HomePage Homepage = new HomePage();
+		RegistrationPage reg = Homepage.clickOnRegister();
+		boolean result = reg.registrationPageTitleIsDisplayed();
 		Assert.assertTrue(result);
 	}
 }

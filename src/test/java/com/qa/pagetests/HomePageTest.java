@@ -27,8 +27,8 @@ public class HomePageTest extends TestBase {
 		Homepage.validatePageSource();
 		boolean act = Homepage.validatePageSource().contains("nopCommercedemo store");
 		Assert.assertTrue(act);
-	};';'
-		]
+	}
+		
 	@Test(priority = 2)
 	public void clickonRegister() {
 		HomePage Homepage = new HomePage();

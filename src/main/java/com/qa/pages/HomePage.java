@@ -10,13 +10,14 @@ import com.qa.keywords.Keyword;
 public class HomePage extends TestBase {
 
 	public WebElement registerBtn;
+	public WebElement loginBtn;
 
 	
 	
 	public HomePage() {
 		Keyword.switchToFrame(0);
 		registerBtn=Keyword.driver.findElement(By.cssSelector(".ico-register"));
-		
+		loginBtn=Keyword.driver.findElement(By.cssSelector(".ico-login"));
 	}
 
 	public String validateHomePageTitle() {
@@ -30,6 +31,10 @@ public class HomePage extends TestBase {
 	public RegistrationPage clickOnRegister() {
 		registerBtn.click();
 		return new RegistrationPage();
+	}
+	public LoginPage clickOnLogin() {
+		loginBtn.click();
+		return new LoginPage();
 	}
 }
 
